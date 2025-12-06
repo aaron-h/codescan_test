@@ -4,6 +4,8 @@ import com.example.backend.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
+//any issue？
+
 @Mapper
 public interface UserMapper {
     List<User> findAll();

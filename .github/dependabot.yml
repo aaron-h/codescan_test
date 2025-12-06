@@ -9,3 +9,9 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+# 确保扫描所有子目录（如果适用）
+  # 注意：如果您的根 pom.xml 包含了所有依赖管理，通常不需要这个额外的配置
+  - package-ecosystem: "maven"
+    directory: "/backend" 
+    schedule:
+      interval: "daily"
